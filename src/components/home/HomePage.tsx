@@ -184,11 +184,11 @@ export default function HomePage() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                       <span className="font-medium">FAC-2025-001</span>
-                      <span className="text-green-600 font-semibold">2 450 MAD</span>
+                      <span className="text-green-600 font-semibold">20 450 MAD</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                       <span className="font-medium">FAC-2025-002</span>
-                      <span className="text-green-600 font-semibold">1 890 MAD</span>
+                      <span className="text-green-600 font-semibold">10 890 MAD</span>
                     </div>
                   </div>
                 </div>
