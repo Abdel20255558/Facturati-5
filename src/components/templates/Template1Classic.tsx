@@ -162,32 +162,30 @@ export default function Template1Classic({ data, type, includeSignature = false 
   </div>
 </div>
 
-<div className="p-8">
-  <div className="flex justify-start">
-    <div className="w-80 bg-gray-50 border border-gray-200 rounded p-6 text-center">
-      {/* Titre centré */}
-      <div className="text-sm font-bold mb-4">
-        Signature
-      </div>
 
-      {/* Case vide pour signature + cachet */}
-      <div className="border-2 border-gray-300 rounded-lg h-32 flex items-center justify-center relative">
-        {includeSignature && user?.company?.signature ? (
-          <img 
-            src={user.company.signature} 
-            alt="Signature" 
-            className="max-h-5 max-w-full object-contain"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-            }}
-          />
-        ) : (
-          <span className="text-gray-400 text-sm"> </span>
-        )}
+        {/* SIGNATURE */}
+        <div className="p-6">
+          <div className="flex justify-start">
+            <div className="w-60 bg-gray-50 border border-black rounded p-4 text-center">
+              <div className="text-sm font-bold mb-3">Signature</div>
+              <div className="border-2 border-black rounded-sm h-20 flex items-center justify-center relative">
+                {includeSignature && user?.company?.signature ? (
+                  <img 
+                    src={user.company.signature} 
+                    alt="Signature" 
+                    className="max-h-18 max-w-full object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                ) : (
+                  <span className="text-gray-400 text-sm"> </span>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
 
       
