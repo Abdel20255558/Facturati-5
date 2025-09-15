@@ -158,11 +158,11 @@ export default function HomePage() {
             <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}>
               <div className="relative">
                 <div className="bg-white rounded-2xl shadow-2xl p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                  <div className="bg-gradient-to-br from-green-500 to-blue-600 rounded-lg p-4 mb-4">
+                  <div className="bg-gradient-to-br from-bleu-500 to-blue-600 rounded-lg p-4 mb-4">
                     <div className="flex items-center justify-between text-white mb-2">
                       <span className="font-semibold">Tableau de bord</span>
                       
-                     <div  className="w-10 h-10 bg-gradient-to-br from-white-500 to-blue-600 rounded-lg">
+                     <div  className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg">
                   <img 
                     src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                     alt="Facturati Logo" 
