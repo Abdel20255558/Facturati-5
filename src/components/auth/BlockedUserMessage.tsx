@@ -105,3 +105,5 @@ export default function BlockedUserMessage({ expiryDate, companyName }: BlockedU
     </div>
   );
 }
+  )
+}
