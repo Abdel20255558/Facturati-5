@@ -514,7 +514,7 @@ export default function HomePage() {
                   <img 
                     src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                     alt="Facturati Logo" 
-                    className="w-6 h-6 object-contain"
+                    className="w-8 h-8 object-contain"
                   />
                 </div>
                 <div>
