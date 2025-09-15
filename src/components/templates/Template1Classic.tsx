@@ -73,19 +73,19 @@ export default function Template1Classic({ data, type, includeSignature = false 
           <table className="w-full">
             <thead className="bg-gray-100">
               <tr>
-                <th className="border-r border-gray-300 px-4 py-3 text-center font-bold">DÉSIGNATION</th>
-                <th className="border-r border-gray-300 px-4 py-3 text-center font-bold">QUANTITÉ</th>
-                <th className="border-r border-gray-300 px-4 py-3 text-center font-bold">P.U. HT</th>
-                <th className="px-4 py-3 text-center font-bold">TOTAL HT</th>
+                <th className="border-r border-gray-300 px-4 py-3 text-center font-bold  text-sm">DÉSIGNATION</th>
+                <th className="border-r border-gray-300 px-4 py-3 text-center font-bold  text-sm">QUANTITÉ</th>
+                <th className="border-r border-gray-300 px-4 py-3 text-center font-bold  text-sm">P.U. HT</th>
+                <th className="px-4 py-3 text-center font-bold  text-sm">TOTAL HT</th>
               </tr>
             </thead>
             <tbody>
               {data.items.map((item, index) => (
                 <tr key={index} className="border-t border-gray-200">
-                  <td className="border-r border-gray-300 px-4 text-center py-3">{item.description}</td>
-                  <td className="border-r border-gray-300 px-4 py-3 text-center">{item.quantity.toFixed(3)} ({item.unit || 'unité'})</td>
-                  <td className="border-r border-gray-300 px-4 py-3 text-center">{item.unitPrice.toFixed(2)} MAD</td>
-                  <td className="px-4 py-3 text-center font-medium">{item.total.toFixed(2)} MAD</td>
+                  <td className="border-r border-gray-300 px-4 text-center  text-sm py-3">{item.description}</td>
+                  <td className="border-r border-gray-300 px-4 py-3  text-sm text-center">{item.quantity.toFixed(3)} ({item.unit || 'unité'})</td>
+                  <td className="border-r border-gray-300 px-4 py-3 V text-center">{item.unitPrice.toFixed(2)} MAD</td>
+                  <td className="px-4 py-3 text-center font-medium  text-sm">{item.total.toFixed(2)} MAD</td>
                 </tr>
               ))}
             </tbody>
