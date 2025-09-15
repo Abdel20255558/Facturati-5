@@ -56,8 +56,8 @@ export default function AddTaskModal({ isOpen, onClose }: AddTaskModalProps) {
       priority: formData.priority,
       status: formData.status,
       deadline: formData.deadline,
-      estimatedHours: formData.estimatedHours || undefined,
-      actualHours: formData.actualHours || undefined
+      estimatedHours: formData.estimatedHours,
+      actualHours: formData.actualHours
     });
     
     setFormData({
