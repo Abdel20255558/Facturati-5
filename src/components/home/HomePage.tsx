@@ -55,14 +55,10 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
-                <img 
-                  src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
-                  alt="Facturati Logo" 
-                  className="w-6 h-6 object-contain"
-                />
+                <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Facturati</h1>
+                <h1 className="text-xl font-bold text-gray-900">Facture.ma</h1>
                 <p className="text-xs text-gray-500">ERP Morocco</p>
               </div>
             </div>
@@ -88,7 +84,7 @@ export default function HomePage() {
 
       {/* MAIN – pousse le footer en bas via flex-1 */}
       <main className="flex-1 pt-16 relative overflow-hidden">
-        {/* Décorations (dans main pour éviter l'espace blanc) */}
+        {/* Décorations (dans main pour éviter l’espace blanc) */}
         <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-gradient-to-br from-teal-300/30 to-blue-300/30 blur-3xl" />
         <div className="pointer-events-none absolute bottom-0 left-0 h-80 w-80 rounded-full bg-gradient-to-tr from-amber-300/30 to-red-300/30 blur-3xl" />
 
@@ -96,7 +92,7 @@ export default function HomePage() {
         <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
             <p className="text-sm sm:text-base font-semibold">
-              🎁 Vous avez <span className="underline decoration-white/60">1 mois d'essai gratuit</span> — Sans carte bancaire — Annulation à tout moment
+              🎁 Vous avez <span className="underline decoration-white/60">1 mois d’essai gratuit</span> — Sans carte bancaire — Annulation à tout moment
             </p>
             <Link to="/login" className="hidden sm:inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-md text-sm font-semibold transition">
               Commencer maintenant <ArrowRight className="w-4 h-4" />
@@ -118,19 +114,19 @@ export default function HomePage() {
               </motion.div>
 
               <motion.h1 variants={fadeUp} className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Facturati — <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Gérez votre entreprise plus vite, plus simplement</span>
+                Facture.ma — <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Gérez votre entreprise plus vite, plus simplement</span>
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-lg sm:text-xl text-gray-700 mb-6">
                 Ne perdez plus de temps avec des fichiers éparpillés et des calculs compliqués.
-                Avec Facturati, vous centralisez <strong>devis</strong>, <strong>factures</strong>, <strong>paiements</strong>, <strong>stock</strong>, <strong>fournisseurs</strong>, <strong>projets</strong> et <strong>équipe</strong> dans une seule plateforme intelligente.
+                Avec Facture.ma, vous centralisez <strong>devis</strong>, <strong>factures</strong>, <strong>paiements</strong>, <strong>stock</strong>, <strong>fournisseurs</strong>, <strong>projets</strong> et <strong>équipe</strong> dans une seule plateforme intelligente.
               </motion.p>
 
               <motion.div variants={fadeUp} className="space-y-3 text-gray-800">
-                <div className="flex items-start gap-3"><span>✨</span><p><strong>Pourquoi choisir Facturati ?</strong></p></div>
+                <div className="flex items-start gap-3"><span>✨</span><p><strong>Pourquoi choisir Facture.ma ?</strong></p></div>
                 <div className="flex items-start gap-3"><span>📑</span><p><strong>Facturation </strong> : créez et envoyez vos devis & factures en quelques clics.</p></div>
                 <div className="flex items-start gap-3"><span>📊</span><p><strong>Tableau de bord intelligent</strong> : suivez vos ventes, dépenses, paiements reçus et impayés en temps réel.</p></div>
-                <div className="flex items-start gap-3"><span>💡</span><p><strong> Facturati : Plus qu'un logiciel</strong> : un partenaire de croissance — clair, rapide, 100 % conforme au Maroc.</p></div>
+                <div className="flex items-start gap-3"><span>💡</span><p><strong> Factuee.ma : Plus qu’un logiciel</strong> : un partenaire de croissance — clair, rapide, 100 % conforme au Maroc.</p></div>
               </motion.div>
 
               <motion.div variants={fadeUp} className="mt-7 flex flex-col sm:flex-row gap-3">
@@ -198,10 +194,10 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={staggerParent} className="text-center mb-10">
               <motion.span variants={fadeUp} className="inline-block bg-gradient-to-r from-teal-600 to-blue-600 text-white px-4 py-1 rounded-md font-bold tracking-wider">
-                FACTURATI
+                FACTURE.MA
               </motion.span>
               <motion.h2 variants={fadeUp} className="mt-4 text-3xl sm:text-4xl font-extrabold text-gray-900">
-                UNE PLATEFORME QUI S'ADAPTE À VOTRE SECTEUR D'ACTIVITÉ
+                UNE PLATEFORME QUI S’ADAPTE À VOTRE SECTEUR D’ACTIVITÉ
               </motion.h2>
             </motion.div>
 
@@ -237,7 +233,7 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div variants={staggerParent} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} className="text-center mb-12">
               <motion.h2 variants={fadeUp} className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Modules & tâches incluses</motion.h2>
-              <motion.p variants={fadeUp} className="text-lg text-gray-600">Tout ce qu'il faut pour piloter vos opérations au quotidien</motion.p>
+              <motion.p variants={fadeUp} className="text-lg text-gray-600">Tout ce qu’il faut pour piloter vos opérations au quotidien</motion.p>
             </motion.div>
 
             <motion.div variants={staggerParent} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.15 }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
@@ -249,7 +245,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Devis</h3>
                 <ul className="space-y-2 text-gray-700 text-sm">
                   <li className="flex items-start gap-2"><ClipboardList className="w-4 h-4 mt-0.5 text-teal-600" /> Création/duplication, validité & conditions.</li>
-                  <li className="flex items-start gap-2"><PenLine className="w-4 h-4 mt-0.5 text-teal-600" /> Signature électronique (Pro) + journal d'audit.</li>
+                  <li className="flex items-start gap-2"><PenLine className="w-4 h-4 mt-0.5 text-teal-600" /> Signature électronique (Pro) + journal d’audit.</li>
                   <li className="flex items-start gap-2"><FileText className="w-4 h-4 mt-0.5 text-teal-600" /> Conversion en facture en 1 clic, statuts & relances.</li>
                   <li className="flex items-start gap-2"><MessageSquare className="w-4 h-4 mt-0.5 text-teal-600" /> Envoi email/WhatsApp avec lien de suivi.</li>
                 </ul>
@@ -276,7 +272,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Gestion financière</h3>
                 <ul className="space-y-2 text-gray-700 text-sm">
                   <li className="flex items-start gap-2"><BarChart3 className="w-4 h-4 mt-0.5 text-teal-600" /> Suivi <strong>payé</strong> / <strong>impayé</strong>, échéances & retards.</li>
-                  <li className="flex items-start gap-2"><PieChart className="w-4 h-4 mt-0.5 text-teal-600" /> État de <strong>trésorerie</strong> & prévisions d'encaissement.</li>
+                  <li className="flex items-start gap-2"><PieChart className="w-4 h-4 mt-0.5 text-teal-600" /> État de <strong>trésorerie</strong> & prévisions d’encaissement.</li>
                   <li className="flex items-start gap-2"><Check className="w-4 h-4 mt-0.5 text-teal-600" /> Calcul de <strong>balance</strong> client & fournisseur.</li>
                 </ul>
               </motion.div>
@@ -402,7 +398,7 @@ export default function HomePage() {
                   <li className="flex items-center gap-3"><Check className="w-5 h-5 text-yellow-300" /> Gestion humaine</li>
                 </ul>
                 <Link to="/login" className="w-full bg-white text-teal-600 hover:bg-gray-100 py-3 px-6 rounded-lg font-semibold text-center block transition">
-                  Démarrer l'essai Pro (1 mois)
+                  Démarrer l’essai Pro (1 mois)
                 </Link>
                 <p className="mt-3 text-center text-white/90 text-sm">Sans carte bancaire • Annulable à tout moment</p>
               </motion.div>
@@ -415,14 +411,14 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={staggerParent} className="text-center mb-12">
               <motion.h2 variants={fadeUp} className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Ils nous font confiance</motion.h2>
-              <motion.p variants={fadeUp} className="text-lg text-gray-600">+1000 entreprises marocaines utilisent Facturati</motion.p>
+              <motion.p variants={fadeUp} className="text-lg text-gray-600">+1000 entreprises marocaines utilisent Facture.ma</motion.p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { name: 'Ahmed Bennani', company: 'Électronique Casa', text: 'Facturati a révolutionné ma gestion. +2h gagnées chaque jour !', rating: 5 },
+                { name: 'Ahmed Bennani', company: 'Électronique Casa', text: 'Facture.ma a révolutionné ma gestion. +2h gagnées chaque jour !', rating: 5 },
                 { name: 'Fatima El Alami', company: 'Boutique Mode Rabat', text: 'Simple, rapide et conforme à la loi marocaine. Parfait pour PME.', rating: 5 },
-                { name: 'Omar Tazi', company: 'Restaurant Le Jardin', text: 'Le suivi de stock m'évite les ruptures. Mes clients sont ravis.', rating: 5 }
+                { name: 'Omar Tazi', company: 'Restaurant Le Jardin', text: 'Le suivi de stock m’évite les ruptures. Mes clients sont ravis.', rating: 5 }
               ].map((t, idx) => (
                 <motion.div
                   key={idx}
@@ -477,10 +473,10 @@ export default function HomePage() {
             </motion.h2>
             <div className="space-y-4">
               {[
-                { q: "L'essai gratuit dure combien de temps ?", a: "Vous avez 1 mois gratuit, sans carte bancaire et sans engagement." },
-                { q: "Puis-je annuler à tout moment ?", a: "Oui. Vous pouvez annuler l'abonnement en un clic depuis votre espace." },
+                { q: "L’essai gratuit dure combien de temps ?", a: "Vous avez 1 mois gratuit, sans carte bancaire et sans engagement." },
+                { q: "Puis-je annuler à tout moment ?", a: "Oui. Vous pouvez annuler l’abonnement en un clic depuis votre espace." },
                 { q: "Mes données sont-elles sécurisées ?", a: "Oui. Hébergement au Maroc, sauvegardes régulières et chiffrement TLS/at-rest." },
-                { q: "Facturati est-il conforme à la loi marocaine ?", a: "Oui. Toutes les mentions obligatoires (ICE, IF, RC, TVA) sont intégrées." }
+                { q: "Facture.ma est-il conforme à la loi marocaine ?", a: "Oui. Toutes les mentions obligatoires (ICE, IF, RC, TVA) sont intégrées." }
               ].map((f, i) => (
                 <motion.details
                   key={i}
@@ -509,7 +505,7 @@ export default function HomePage() {
       </main>
 
       {/* FOOTER collé en bas */}
-      <footer id="contact" className="bg-gray-900 text-white py-16 mt-auto">
+        <footer id="contact" className="bg-gray-900 text-white py-16 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
@@ -541,6 +537,7 @@ export default function HomePage() {
               </div>
             </div>
 
+
             {/* Liens rapides (mis à jour) */}
             <div>
               <h4 className="font-semibold mb-4">Liens rapides</h4>
@@ -563,7 +560,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
-                  <span>support@facturati.ma</span>
+                  <span>support@facture.ma</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
@@ -574,7 +571,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Facturati. Tous droits réservés. Made with ❤️ in Morocco 🇲🇦</p>
+            <p>&copy; {new Date().getFullYear()} Facture.ma. Tous droits réservés. Made with ❤️ in Morocco 🇲🇦</p>
           </div>
         </div>
       </footer>
