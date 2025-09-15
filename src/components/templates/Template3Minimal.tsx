@@ -16,8 +16,8 @@ export default function Template3Minimal({ data, type, includeSignature = false 
       className="bg-white mx-auto shadow-lg rounded overflow-hidden flex flex-col relative"
       style={{
         fontFamily: 'Arial, sans-serif',
-        width: '794px',       // largeur A4
-        minHeight: '1123px',  // hauteur A4
+       width: '750px',       // largeur A4
+        minHeight: '1110px',  // hauteur A4
       }}
     >
       {/* Motif en haut à droite */}
