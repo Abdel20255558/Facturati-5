@@ -197,7 +197,7 @@ export default function Sidebar({ open, setOpen, onUpgrade }: SidebarProps) {
             <motion.div 
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
-              className="w-8 h-8 bg-gradient-to-br from-teal-600 to-red-600 rounded-lg flex items-center justify-center shadow-lg"
+              className="w-8 h-8 bg-gradient-to-br from-black-200 to-red-600  rounded-lg flex items-center justify-center shadow-lg"
             >
               <img 
                 src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
