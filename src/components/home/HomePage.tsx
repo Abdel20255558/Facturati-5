@@ -560,11 +560,11 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
-                  <span>Contact@facturati.ma</span>
+                  <span>contact@facturati.ma</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
-                  <span>+212 522 123 456</span>
+                  <span>+212 666 736 446</span>
                 </div>
               </div>
             </div>
