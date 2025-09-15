@@ -317,11 +317,11 @@ function RegisterForm({ onBack }: { onBack: () => void }) {
       <div className="max-w-2xl w-full space-y-8">
         <div className="text-center">
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+ <div   className="w-16 h-16 bg-gradient-to-br from-teal-600 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
               <img 
-                src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                 alt="Facturati Logo" 
-                className="w-8 h-8 object-contain"
+                className="w-15 h-15 object-contain"
               />
             </div>
           </div>
