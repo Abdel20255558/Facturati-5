@@ -510,7 +510,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center">
+                <div  className="w-8 h-8 bg-gradient-to-br from-teal-600 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
                   <img 
                     src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                     alt="Facturati Logo" 
