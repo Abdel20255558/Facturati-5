@@ -185,7 +185,6 @@ export default function Template1Classic({ data, type, includeSignature = false 
             </div>
           </div>
         </div>
-      </div>
 
 
       
