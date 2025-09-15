@@ -38,7 +38,7 @@ export default function Template2Modern({ data, type, includeSignature = false }
       </div>
 
       {/* CONTENU PRINCIPAL */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col pb-32"> {/* 🔹 padding bas ajouté */}
         {/* CLIENT + DATES */}
         <div className="p-8 border-b border-black">
           <div className="grid grid-cols-2 gap-8">
@@ -168,7 +168,14 @@ export default function Template2Modern({ data, type, includeSignature = false }
       </div>
 
       {/* FOOTER collé en bas */}
-      <div className="mt-auto bg-black text-white border-t-2 border-white p-6 text-sm text-center">
+      <div 
+        className="bg-black text-white border-t-2 border-white p-6 text-sm text-center"
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          width: '100%',
+        }}
+      >
         <p>
           <strong>{user?.company.name}</strong> | {user?.company.address} | <strong>Tél :</strong> {user?.company.phone} | <strong>ICE :</strong> {user?.company.ice} | <strong>IF:</strong> {user?.company.if} | <strong>RC:</strong> {user?.company.rc} | <strong>CNSS:</strong> {user?.company.cnss} | <strong>Patente :</strong> {user?.company.patente} | <strong>EMAIL :</strong> {user?.company.email} | <strong>SITE WEB :</strong> {user?.company.website}
         </p>
