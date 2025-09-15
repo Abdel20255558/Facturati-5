@@ -54,9 +54,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center shadow-sm">
-                <Building2 className="w-6 h-6 text-white" />
-              </div>
+              <div  className="w-10 h-10 bg-gradient-to-br from-whith-600 to-black-100 rounded-lg flex items-center justify-center shadow-lg">
+                  <img 
+                    src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
+                    alt="Facturati Logo" 
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+        
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Facturati</h1>
                 <p className="text-xs text-gray-500">ERP Morocco</p>
