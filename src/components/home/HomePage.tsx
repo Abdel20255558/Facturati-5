@@ -158,7 +158,7 @@ export default function HomePage() {
             <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}>
               <div className="relative">
                 <div className="bg-white rounded-2xl shadow-2xl p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                  <div className="bg-gradient-to-br from-blue-1000 rounded-lg p-4 mb-4">
+                  <div className="bg-gradient-to-br from-blue-100 rounded-lg p-4 mb-4">
                     <div className="flex items-center justify-between text-white mb-2">
                       <span className="font-semibold">Tableau de bord</span>
                       
