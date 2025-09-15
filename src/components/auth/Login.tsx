@@ -70,7 +70,7 @@ export default function Login() {
             </div>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            {t('Bienvenue Facturati')}
+            {t('Bienvenue sur Facturati')}
             
           </h2>
           <p className="text-gray-600">{t('loginSubtitle')}</p>
