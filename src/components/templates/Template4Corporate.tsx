@@ -21,8 +21,8 @@ export default function Template4Corporate({ data, type, includeSignature = fals
       className="bg-white mx-auto shadow-lg rounded overflow-hidden flex flex-col"
       style={{
         fontFamily: 'Arial, sans-serif',
-        width: '794px',        // largeur A4 en pixels
-        minHeight: '1123px',   // hauteur A4 en pixels
+         width: '750px',       // largeur A4
+        minHeight: '1110px',  // hauteur A4  // hauteur A4 en pixels
       }}
     >
       {/* CONTENU PRINCIPAL */}
