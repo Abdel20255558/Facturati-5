@@ -202,7 +202,7 @@ export default function Sidebar({ open, setOpen, onUpgrade }: SidebarProps) {
               <img 
                 src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                 alt="Facturati Logo" 
-                className="w-5 h-5 object-contain"
+                className="w-8 h-8 object-contain"
               />
             </motion.div>
             {open && (
