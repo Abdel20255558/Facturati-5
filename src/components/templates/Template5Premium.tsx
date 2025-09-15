@@ -17,8 +17,8 @@ export default function Template5Premium({ data, type, includeSignature = false 
       className="bg-white mx-auto flex flex-col relative"
       style={{
         fontFamily: 'Arial, sans-serif',
-        width: '794px',       // largeur A4
-        minHeight: '1123px',  // hauteur A4
+         width: '750px',       // largeur A4
+        minHeight: '1110px',  // hauteur A4
       }}
     >
     {/* HEADER avec wave intégré dans le bleu */}
