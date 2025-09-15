@@ -14,8 +14,14 @@ export default function Template1Classic({ data, type, includeSignature = false 
 
   
   return (
-    <div className="bg-white max-w-4xl mx-auto border border-gray-300" style={{ fontFamily: 'Arial, sans-serif' }}>
-      
+  <div
+      className="bg-white mx-auto border border-black flex flex-col relative"
+      style={{
+        fontFamily: 'Arial, sans-serif',
+        width: '750px',       // largeur A4
+        minHeight: '1110px',  // hauteur A4
+      }}
+    >      
       {/* HEADER */}
       <div className="p-8 border-b border-gray-300">
         <div className="flex justify-between items-center">
