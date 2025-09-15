@@ -72,7 +72,7 @@ export default function Login() {
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
             {t('welcome')}
           </h2>
-          <p className="text-gray-600">{t('Facturati')}</p>
+          <p className="text-gray-600">{'Facturati'}</p>
           
           {/* Language Toggle */}
           <div className="flex justify-center mt-4">
