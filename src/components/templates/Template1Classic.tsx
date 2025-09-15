@@ -199,10 +199,17 @@ export default function Template1Classic({ data, type, includeSignature = false 
       
 
       {/* FOOTER AVEC INFOS ÉMETTEUR */}
-<div className="bg-gray-100 border-t-2 border-gray-400 p-6 text-sm text-gray-700 text-center">
-          <div>
+ {/* FOOTER collé en bas */}
+      <div 
+        className="bg-black text-white border-t-2 border-white p-6 text-sm text-center"
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          width: '100%',
+        }}
+      >
         <p>
-         <strong> {user?.company.name} </strong>  | {user?.company.address} | <strong>Tél :</strong> {user?.company.phone} | <strong>ICE :</strong> {user?.company.ice} |  <strong> IF:</strong> {user?.company.if} | <strong> RC:</strong> {user?.company.rc} | <strong> CNSS:</strong> {user?.company.cnss} | <strong> Patente :</strong> {user?.company.patente} | <strong> EMAIL :</strong> {user?.company.email} | <strong> SITE WEB  :</strong> {user?.company.website}
+          <strong>{user?.company.name}</strong> | {user?.company.address} | <strong>Tél :</strong> {user?.company.phone} | <strong>ICE :</strong> {user?.company.ice} | <strong>IF:</strong> {user?.company.if} | <strong>RC:</strong> {user?.company.rc} | <strong>CNSS:</strong> {user?.company.cnss} | <strong>Patente :</strong> {user?.company.patente} | <strong>EMAIL :</strong> {user?.company.email} | <strong>SITE WEB :</strong> {user?.company.website}
         </p>
           </div>
         </div>
