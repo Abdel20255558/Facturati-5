@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div  className="w-10 h-10 bg-gradient-to-br from-black-200 to-bleu-600 rounded-lg flex items-center justify-center shadow-lg">
+              <div  className="w-10 h-10 bg-gradient-to-br from-black-200 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
                   <img 
                     src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                     alt="Facturati Logo" 
