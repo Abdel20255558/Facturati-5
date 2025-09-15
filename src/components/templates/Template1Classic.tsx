@@ -201,7 +201,7 @@ export default function Template1Classic({ data, type, includeSignature = false 
       {/* FOOTER AVEC INFOS ÉMETTEUR */}
  {/* FOOTER collé en bas */}
       <div 
-        className="bg-black text-white border-t-2 border-white p-6 text-sm text-center"
+        className="bg-white text-black border-t-2 border-white p-6 text-sm text-center"
         style={{
           position: 'absolute',
           bottom: 0,
