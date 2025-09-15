@@ -200,7 +200,7 @@ export default function Sidebar({ open, setOpen, onUpgrade }: SidebarProps) {
               className="w-8 h-8 bg-gradient-to-br from-teal-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg"
             >
               <img 
-                src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                 alt="Facturati Logo" 
                 className="w-5 h-5 object-contain"
               />
