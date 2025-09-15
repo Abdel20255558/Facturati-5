@@ -170,7 +170,7 @@ export default function Template1Classic({ data, type, includeSignature = false 
           <img 
             src={user.company.signature} 
             alt="Signature" 
-            className="max-h-15 max-w-full object-contain"
+            className="max-h-5 max-w-full object-contain"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
             }}
