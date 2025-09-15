@@ -28,6 +28,7 @@ import ProjectsList from './ProjectsList';
 import ProjectKanban from './ProjectKanban';
 import ProjectCalendar from './ProjectCalendar';
 import ProjectReports from './ProjectReports';
+import TasksSection from './TasksSection';
 import AddProjectModal from './AddProjectModal';
 import EditProjectModal from './EditProjectModal';
 import AddTaskModal from './AddTaskModal';
@@ -76,6 +77,7 @@ export default function ProjectManagement() {
     { id: 'dashboard', label: 'Tableau de Bord', icon: BarChart3 },
     { id: 'projects', label: 'Projets', icon: FolderKanban },
     { id: 'kanban', label: 'Kanban', icon: Target },
+    { id: 'tasks', label: 'Tâches', icon: CheckCircle },
     { id: 'calendar', label: 'Calendrier', icon: Calendar },
     { id: 'reports', label: 'Rapports', icon: FileText }
   ];
@@ -220,6 +222,14 @@ export default function ProjectManagement() {
           tasks={tasks}
           employees={employees}
           onEditTask={setEditingTask}
+          onEditProject={setEditingProject}
+        />
+      )}
+
+      {activeTab === 'tasks' && (
+        <TasksSection 
+          onAddTask={() => setIsAddTaskModalOpen(true)}
+          onEditTask={setEditingTask}
         />
       )}
 
@@ -250,19 +260,29 @@ export default function ProjectManagement() {
       />
 
       {editingProject && (
-        <EditProjectModal
-          isOpen={!!editingProject}
-          onClose={() => setEditingProject(null)}
-          project={projects.find(p => p.id === editingProject)!}
-        />
+        (() => {
+          const project = projects.find(p => p.id === editingProject);
+          return project ? (
+            <EditProjectModal
+              isOpen={!!editingProject}
+              onClose={() => setEditingProject(null)}
+              project={project}
+            />
+          ) : null;
+        })()
       )}
 
       {editingTask && (
-        <EditTaskModal
-          isOpen={!!editingTask}
-          onClose={() => setEditingTask(null)}
-          task={tasks.find(t => t.id === editingTask)!}
-        />
+        (() => {
+          const task = tasks.find(t => t.id === editingTask);
+          return task ? (
+            <EditTaskModal
+              isOpen={!!editingTask}
+              onClose={() => setEditingTask(null)}
+              task={task}
+            />
+          ) : null;
+        })()
       )}
     </div>
   );
