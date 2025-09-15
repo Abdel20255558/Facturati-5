@@ -505,16 +505,20 @@ export default function HomePage() {
       </main>
 
       {/* FOOTER collé en bas */}
-      <footer id="contact" className="bg-gray-900 text-white py-16 mt-auto">
+        <footer id="contact" className="bg-gray-900 text-white py-16 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center">
-                  <Building2 className="w-6 h-6 text-white" />
+                  <img 
+                    src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                    alt="Facturati Logo" 
+                    className="w-6 h-6 object-contain"
+                  />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Facture.ma</h3>
+                  <h3 className="text-xl font-bold">Facturati</h3>
                   <p className="text-sm text-gray-400">ERP Morocco</p>
                 </div>
               </div>
@@ -528,10 +532,11 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-2 text-gray-400">
                   <Mail className="w-4 h-4" />
-                  <span>contact@facture.ma</span>
+                  <span>contact@facturati.ma</span>
                 </div>
               </div>
             </div>
+
 
             {/* Liens rapides (mis à jour) */}
             <div>
