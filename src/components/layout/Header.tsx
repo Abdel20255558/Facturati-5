@@ -136,7 +136,11 @@ export default function Header({ sidebarOpen, setSidebarOpen, onOpenSearch, onOp
                   />
                 ) : (
                   <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-blue-500 rounded-full flex items-center justify-center">
-                    <User className="w-4 h-4 text-white" />
+                    <img 
+                      src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                      alt="Facturati Logo" 
+                      className="w-4 h-4 object-contain"
+                    />
                   </div>
                 )}
               </button>

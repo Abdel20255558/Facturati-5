@@ -199,11 +199,15 @@ export default function Sidebar({ open, setOpen, onUpgrade }: SidebarProps) {
               transition={{ duration: 0.5 }}
               className="w-8 h-8 bg-gradient-to-br from-teal-600 to-blue-600 rounded-lg flex items-center justify-center shadow-lg"
             >
-              <Building2 className="w-5 h-5 text-white" />
+              <img 
+                src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                alt="Facturati Logo" 
+                className="w-5 h-5 object-contain"
+              />
             </motion.div>
             {open && (
               <div>
-                <h1 className="text-lg font-bold text-gray-900 dark:text-white">Facture.ma</h1>
+                <h1 className="text-lg font-bold text-gray-900 dark:text-white">Facturati</h1>
                 <p className="text-xs text-gray-500 dark:text-gray-400">ERP Morocco (V.1.25.5)</p>
               </div>
             )}

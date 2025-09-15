@@ -269,20 +269,20 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
       {/* Graphiques et analyses */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Répartition des projets par statut */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Répartition par Statut</h3>
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6 transition-colors duration-300">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 transition-colors duration-300">Répartition par Statut</h3>
           <div className="space-y-4">
             {projectsByStatus.map((item, index) => (
-              <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+              <div key={index} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg transition-colors duration-300">
                 <div className="flex items-center space-x-3">
                   <div 
                     className="w-4 h-4 rounded-full"
                     style={{ backgroundColor: item.color }}
                   />
-                  <span className="font-medium text-gray-900">{item.name}</span>
+                  <span className="font-medium text-gray-900 dark:text-gray-100 transition-colors duration-300">{item.name}</span>
                 </div>
                 <div className="text-right">
-                  <span className="text-lg font-bold text-gray-900">{item.value}</span>
+                  <span className="text-lg font-bold text-gray-900 dark:text-gray-100 transition-colors duration-300">{item.value}</span>
                   <div className="text-xs text-gray-500">
                     {projects.length > 0 ? ((item.value / projects.length) * 100).toFixed(1) : 0}%
                   </div>
@@ -293,11 +293,11 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
         </div>
 
         {/* Performance des employés */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Performance Équipe</h3>
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6 transition-colors duration-300">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 transition-colors duration-300">Performance Équipe</h3>
           <div className="space-y-4">
             {employeePerformance.slice(0, 5).map((employee, index) => (
-              <div key={employee.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+              <div key={employee.id} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg transition-colors duration-300">
                 <div className="flex items-center space-x-3">
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm ${
                     index === 0 ? 'bg-yellow-500' : 
@@ -306,17 +306,17 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
                     #{index + 1}
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900">
+                    <p className="font-medium text-gray-900 dark:text-gray-100 transition-colors duration-300">
                       {employee.firstName} {employee.lastName}
                     </p>
-                    <p className="text-xs text-gray-500">{employee.position}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 transition-colors duration-300">{employee.position}</p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-sm font-bold text-gray-900">
+                  <div className="text-sm font-bold text-gray-900 dark:text-gray-100 transition-colors duration-300">
                     {employee.efficiency.toFixed(0)}%
                   </div>
-                  <div className="text-xs text-gray-500">
+                  <div className="text-xs text-gray-500 dark:text-gray-400 transition-colors duration-300">
                     {employee.completedTasks}/{employee.totalTasks} tâches
                   </div>
                 </div>
@@ -362,14 +362,14 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
                 <tr key={project.id} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div>
-                      <div className="text-sm font-medium text-gray-900 dark:text-gray-100">{project.name}</div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">{project.client.name}</div>
+                      <div className="text-sm font-medium text-gray-900 dark:text-gray-100 transition-colors duration-300">{project.name}</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400 transition-colors duration-300">{project.client.name}</div>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 transition-colors duration-300">
                     {project.budget.toLocaleString()} MAD
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100 transition-colors duration-300">
                     {project.estimatedCost.toLocaleString()} MAD
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -392,7 +392,7 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center space-x-2">
-                      <div className="w-16 bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                      <div className="w-16 bg-gray-200 dark:bg-gray-600 rounded-full h-2 transition-colors duration-300">
                         <div 
                           className={`h-2 rounded-full ${
                             project.progress >= 80 ? 'bg-green-500' :
@@ -402,7 +402,7 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
                           style={{ width: `${project.progress}%` }}
                         />
                       </div>
-                      <span className="text-xs font-medium text-gray-600 dark:text-gray-300">{project.progress}%</span>
+                      <span className="text-xs font-medium text-gray-600 dark:text-gray-300 transition-colors duration-300">{project.progress}%</span>
                     </div>
                   </td>
                 </tr>
@@ -413,8 +413,8 @@ export default function ProjectReports({ projects, tasks, employees }: ProjectRe
 
         {projectProfitability.length === 0 && (
           <div className="text-center py-12">
-            <BarChart3 className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-            <p className="text-gray-500 dark:text-gray-400">Aucune donnée de rentabilité disponible</p>
+            <BarChart3 className="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4 transition-colors duration-300" />
+            <p className="text-gray-500 dark:text-gray-400 transition-colors duration-300">Aucune donnée de rentabilité disponible</p>
           </div>
         )}
       </div>
