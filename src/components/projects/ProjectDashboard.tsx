@@ -343,9 +343,9 @@ export default function ProjectDashboard({ projects, tasks, employees }: Project
 
         {projects.length === 0 && (
           <div className="text-center py-12">
-            <FolderKanban className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-            <p className="text-gray-500 dark:text-gray-400">Aucun projet créé</p>
-            <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">Créez votre premier projet pour commencer</p>
+            <FolderKanban className="w-12 h-12 text-gray-300 dark:text-gray-600 mx-auto mb-4 transition-colors duration-300" />
+            <p className="text-gray-500 dark:text-gray-400 transition-colors duration-300">Aucun projet créé</p>
+            <p className="text-sm text-gray-400 dark:text-gray-500 mt-1 transition-colors duration-300">Créez votre premier projet pour commencer</p>
           </div>
         )}
       </div>
@@ -385,8 +385,8 @@ export default function ProjectDashboard({ projects, tasks, employees }: Project
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-lg font-semibold mb-2">📊 Résumé de Performance</h3>
-            <p className="text-sm opacity-90">
-              {totalProjects} projets • {completedProjects.length} terminés • {Math.round(averageProgress)}% progression moyenne
+            <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300">
+              Commencez à utiliser Facturati pour voir vos activités ici
             </p>
           </div>
           <div className="text-right">

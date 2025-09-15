@@ -117,6 +117,7 @@ export default function Header({ sidebarOpen, setSidebarOpen, onOpenSearch, onOp
                 })()
               )}
               {user.email === 'admin@facture.ma' && (
+              {user.email === 'admin@facturati.ma' && (
                 <span className="ml-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full">
                   Admin Plateforme
                 </span>
@@ -134,13 +135,9 @@ export default function Header({ sidebarOpen, setSidebarOpen, onOpenSearch, onOp
                     alt="Logo" 
                     className="w-8 h-8 rounded-full object-cover"
                   />
-                ) : (
+                      {user.email === 'admin@facturati.ma' ? 'Admin Plateforme' : 
                   <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-blue-500 rounded-full flex items-center justify-center">
-                    <img 
-                      src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
-                      alt="Facturati Logo" 
-                      className="w-4 h-4 object-contain"
-                    />
+                    <User className="w-4 h-4 text-white" />
                   </div>
                 )}
               </button>

@@ -600,7 +600,8 @@ export default function CreateQuote() {
                   <button
                     onClick={() => {
                       setShowSignatureModal(false);
-                      navigate('/settings');
+                      entrepriseId: user?.isAdmin ? user.id : user.entrepriseId || '',
+                      totalInWords: convertNumberToWords(totalTTC)
                     }}
                     className="flex-1 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200"
                   >

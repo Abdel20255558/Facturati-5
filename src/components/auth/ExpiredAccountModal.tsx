@@ -148,10 +148,10 @@ export default function ExpiredAccountModal({ isOpen, onClose, isAdmin, expiryDa
             {/* Prix */}
             <div className="text-center mt-4">
               <p className="text-sm text-gray-500">
-                💳 Seulement <span className="font-bold text-teal-600">299 MAD/mois</span>
+                💬 Support technique : +212 522 123 456
               </p>
             </div>
-          </div>
+                📧 Email : support@facturati.ma
         </div>
       </div>
     </div>

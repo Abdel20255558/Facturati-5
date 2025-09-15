@@ -62,7 +62,11 @@ export default function Login() {
         <div className="text-center">
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-              <Building2 className="w-8 h-8 text-white" />
+              <img 
+                src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                alt="Facturati Logo" 
+                className="w-8 h-8 object-contain"
+              />
             </div>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -178,7 +182,7 @@ export default function Login() {
           
           <div className="text-center mt-4">
             <p className="text-xs text-gray-500">
-              Admin Facture.ma ? Utilisez vos identifiants habituels
+              Admin Facturati ? Utilisez vos identifiants habituels
             </p>
           </div>
         </form>
@@ -285,7 +289,7 @@ function RegisterForm({ onBack }: { onBack: () => void }) {
               <ol className="text-sm text-blue-800 space-y-1 text-left">
                 <li>1. Ouvrez votre boîte email</li>
                 <li>2. Cliquez sur le lien de vérification</li>
-                <li>3. Revenez ici pour vous connecter</li>
+                <li>3. Revenez sur Facturati pour vous connecter</li>
               </ol>
             </div>
             
@@ -315,13 +319,17 @@ function RegisterForm({ onBack }: { onBack: () => void }) {
         <div className="text-center">
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-gradient-to-br from-teal-600 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-              <Building2 className="w-8 h-8 text-white" />
+              <img 
+                src="https://i.ibb.co/Y4YSN46f/20250913-2301-Logo-Am-lior-remix-01k52hfbh2fyg8m99kngk626qm-1.png" 
+                alt="Facturati Logo" 
+                className="w-8 h-8 object-contain"
+              />
             </div>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
             Créer votre compte
           </h2>
-          <p className="text-gray-600">Rejoignez Facture.ma et simplifiez votre gestion</p>
+          <p className="text-gray-600">Rejoignez Facturati et simplifiez votre gestion</p>
         </div>
 
         <form className="space-y-6" onSubmit={handleSubmit}>

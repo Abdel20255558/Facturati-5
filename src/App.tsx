@@ -61,7 +61,7 @@ function AppContent() {
     }
     
     // Bloquer les utilisateurs non-admin si l'abonnement de l'entreprise a expiré
-    if (user && !user.isAdmin && user.email !== 'admin@facture.ma') {
+    if (user && !user.isAdmin && user.email !== 'admin@facturati.ma') {
       const isCompanyProExpired = user.company.subscription !== 'pro' || 
         (user.company.expiryDate && new Date(user.company.expiryDate) < new Date());
       if (isCompanyProExpired) {
@@ -125,7 +125,7 @@ function AppContent() {
   }
 
   // Si c'est l'admin de facture.ma, afficher le dashboard admin
-  if (user?.email === 'admin@facture.ma') {
+  if (user?.email === 'admin@facturati.ma') {
     return (
       <div className="min-h-screen bg-gray-50">
         <Routes>

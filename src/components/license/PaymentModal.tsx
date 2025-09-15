@@ -35,8 +35,8 @@ export default function PaymentModal({ isOpen, onClose, onComplete, isRenewal = 
   };
 
   const handleWhatsAppRedirect = () => {
-    const message = encodeURIComponent('Bonjour, voici mon reçu pour l\'activation de mon abonnement PRO.');
-    const whatsappUrl = `https://wa.me/212666736446?text=${message}`;
+    const message = encodeURIComponent('Bonjour, voici mon reçu pour l\'activation de mon abonnement PRO Facturati.');
+    const whatsappUrl = `https://wa.me/212522123456?text=${message}`;
     window.open(whatsappUrl, '_blank');
     
     // Afficher la confirmation après un délai
@@ -271,7 +271,7 @@ export default function PaymentModal({ isOpen, onClose, onComplete, isRenewal = 
 
               <div className="mt-6">
                 <p className="text-sm text-gray-500">
-                  📞 Support : +212 666 736 446 • 📧 support@facture.ma
+                  📞 Support : +212 522 123 456 • 📧 support@facturati.ma
                 </p>
               </div>
             </div>

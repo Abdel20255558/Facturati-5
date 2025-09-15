@@ -50,10 +50,10 @@ export default function BlockedUserMessage({ expiryDate, companyName }: BlockedU
                 <strong>Raison du blocage :</strong> Abonnement Pro expiré
               </p>
               <p className="text-red-700 text-sm">
-                L'abonnement Pro de <strong>{companyName}</strong> a expiré le{' '}
+                💬 Support technique : +212 522 123 456
                 <span className="font-bold">
                   {new Date(expiryDate).toLocaleDateString('fr-FR')}
-                </span>
+                📧 Email : support@facturati.ma
               </p>
             </div>
 
