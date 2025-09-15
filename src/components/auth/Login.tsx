@@ -78,26 +78,7 @@ export default function Login() {
           {/* Language Toggle */}
           <div className="flex justify-center mt-4">
             <div className="flex bg-gray-100 rounded-lg p-1">
-              <button
-                onClick={() => setLanguage('fr')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  language === 'fr' 
-                    ? 'bg-white text-teal-600 shadow-sm' 
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                FR
-              </button>
-              <button
-                onClick={() => setLanguage('ar')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  language === 'ar' 
-                    ? 'bg-white text-teal-600 shadow-sm' 
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                العربية
-              </button>
+             
             </div>
           </div>
         </div>
