@@ -17,8 +17,8 @@ export default function Template2Modern({ data, type, includeSignature = false }
       className="bg-white mx-auto border border-black flex flex-col relative"
       style={{
         fontFamily: 'Arial, sans-serif',
-        width: '794px',       // largeur A4
-        minHeight: '1120px',  // hauteur A4
+        width: '750px',       // largeur A4
+        minHeight: '1110px',  // hauteur A4
       }}
     >
       {/* HEADER */}
