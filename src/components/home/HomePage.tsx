@@ -161,7 +161,8 @@ export default function HomePage() {
                   <div className="bg-gradient-to-br from-teal-500 to-blue-600 rounded-lg p-4 mb-4">
                     <div className="flex items-center justify-between text-white mb-2">
                       <span className="font-semibold">Tableau de bord</span>
-                     <div  className="w-10 h-10 bg-gradient-to-br from-black-200 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
+                      
+                     <div  className="w-10 h-10 bg-gradient-to-br from-whith-200 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
                   <img 
                     src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                     alt="Facturati Logo" 
