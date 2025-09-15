@@ -61,7 +61,7 @@ export default function Login() {
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <div className="flex justify-center mb-6">
-            <div   className="w-16 h-16 bg-gradient-to-br from-teal-600 to-red-600 rounded-lg flex items-center justify-center shadow-lg">
+            <div   className="w-16 h-16 bg-gradient-to-br from-black-200 to-red-600  rounded-lg flex items-center justify-center shadow-lg">
               <img 
                 src="https://i.ibb.co/kgVKRM9z/20250915-1327-Conception-Logo-Color-remix-01k56ne0szey2vndspbkzvezyp-1.png" 
                 alt="Facturati Logo" 
