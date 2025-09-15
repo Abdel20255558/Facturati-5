@@ -213,6 +213,6 @@ export default function Template1Classic({ data, type, includeSignature = false 
         </p>
           </div>
         </div>
-      </div>
+ 
   );
 };
