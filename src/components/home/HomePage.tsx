@@ -571,7 +571,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Facturati. Tous droits réservés. Made with ❤️ in Morocco 🇲🇦</p>
+            <p>&copy; {new Date().getFullYear()} Facturati. Tous droits réservés. Made in Morocco 🇲🇦</p>
           </div>
         </div>
       </footer>
