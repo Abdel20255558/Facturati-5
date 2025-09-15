@@ -556,7 +556,7 @@ export default function HomePage() {
               <div className="space-y-3 text-gray-400">
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                  <span><br />Sale, Maroc</span>
+                  <span>Sale, Maroc</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
