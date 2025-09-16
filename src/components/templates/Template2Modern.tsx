@@ -16,10 +16,12 @@ export default function Template2Modern({ data, type, includeSignature = false }
     <div
       className="bg-white mx-auto border border-black flex flex-col relative"
       style={{
-        fontFamily: 'Arial, sans-serif',
-        width: '750px',       // largeur A4
-        minHeight: '1110px',  // hauteur A4
-      }}
+    fontFamily: 'Arial, sans-serif',
+    width: '100%',        // prend toute la largeur définie par le wrapper
+    maxWidth: '750px',    // largeur A4
+    height: '1100px',     // hauteur A4
+    display: 'flex',
+  }}
     >
       {/* HEADER */}
       <div className="p-8 border-b border-black bg-black text-white text-center">
