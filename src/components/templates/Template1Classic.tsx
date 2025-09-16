@@ -19,7 +19,7 @@ export default function Template1Classic({ data, type, includeSignature = false 
     fontFamily: 'Arial, sans-serif',
     width: '100%',        // prend toute la largeur définie par le wrapper
     maxWidth: '750px',    // largeur A4
-    height: '1123px',     // hauteur A4
+    height: '1050px',     // hauteur A4
     display: 'flex',
   }}
     >
