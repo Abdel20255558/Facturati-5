@@ -15,10 +15,12 @@ export default function Template3Minimal({ data, type, includeSignature = false 
     <div
       className="bg-white mx-auto shadow-lg rounded overflow-hidden flex flex-col relative"
       style={{
-        fontFamily: 'Arial, sans-serif',
-       width: '750px',       // largeur A4
-        minHeight: '1110px',  // hauteur A4
-      }}
+    fontFamily: 'Arial, sans-serif',
+    width: '100%',        // prend toute la largeur définie par le wrapper
+    maxWidth: '750px',    // largeur A4
+    height: '1100px',     // hauteur A4
+    display: 'flex',
+  }}
     >
       {/* Motif en haut à droite */}
       <img
