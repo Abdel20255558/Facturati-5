@@ -18,7 +18,7 @@ export default function Template1Classic({ data, type, includeSignature = false 
       style={{
         fontFamily: 'Arial, sans-serif',
         width: '750px',       // largeur A4
-        minHeight: '1200',  // hauteur A4
+        minHeight: '1500',  // hauteur A4
         display: 'flex',
       }}
     >
