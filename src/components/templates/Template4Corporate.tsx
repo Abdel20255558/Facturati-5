@@ -20,10 +20,12 @@ export default function Template4Corporate({ data, type, includeSignature = fals
     <div
       className="bg-white mx-auto shadow-lg rounded overflow-hidden flex flex-col"
       style={{
-        fontFamily: 'Arial, sans-serif',
-         width: '750px',       // largeur A4
-        minHeight: '1110px',  // hauteur A4  // hauteur A4 en pixels
-      }}
+    fontFamily: 'Arial, sans-serif',
+    width: '100%',        // prend toute la largeur définie par le wrapper
+    maxWidth: '750px',    // largeur A4
+    height: '1100px',     // hauteur A4
+    display: 'flex',
+  }}
     >
       {/* CONTENU PRINCIPAL */}
       <div className="flex-1 flex flex-col">
