@@ -45,7 +45,7 @@ export default function Template3Minimal({ data, type, includeSignature = false 
               src={user.company.logo}
               alt="Logo"
               className="mx-auto"
-              style={{ height: '140px', width: '140px' }}
+              style={{ height: '100px', width: '100px' }}
             />
           )}
           <h1 className="text-4xl font-extrabold text-[#0a1f44]">
