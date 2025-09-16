@@ -15,11 +15,13 @@ export default function Template5Premium({ data, type, includeSignature = false 
   return (
     <div
       className="bg-white mx-auto flex flex-col relative"
-      style={{
-        fontFamily: 'Arial, sans-serif',
-         width: '750px',       // largeur A4
-        minHeight: '1110px',  // hauteur A4
-      }}
+       style={{
+    fontFamily: 'Arial, sans-serif',
+    width: '100%',        // prend toute la largeur définie par le wrapper
+    maxWidth: '750px',    // largeur A4
+    height: '1100px',     // hauteur A4
+    display: 'flex',
+  }}
     >
     {/* HEADER avec wave intégré dans le bleu */}
 <div className="relative bg-[#0a1f44] text-white">
